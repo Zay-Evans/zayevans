@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TERMINAL: YOUR NAME | Network & Cyber Operations</title>
+    <style>
+        :root {
+            --neon-cyan: #00f2ff;
+            --neon-pink: #ff007a;
+            --matrix-green: #0f0;
+            --bg-black: #050505;
+            --glass-bg: rgba(20, 20, 20, 0.8);
+        }
+
+        body {
+            background-color: var(--bg-black);
+            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            overflow-x: hidden;
+            background: radial-gradient(circle at center, #111 0%, #000 100%);
+        }
+
+        /* Animated Grid Background */
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background-image: linear-gradient(var(--neon-cyan) 1px, transparent 1px),
+                              linear-gradient(90deg, var(--neon-cyan) 1px, transparent 1px);
+            background-size: 50px 50px;
+            background-position: center;
+            opacity: 0.05;
+            z-index: -1;
+        }
+
+        header {
+            text-align: center;
+            padding: 60px 20px;
+            background: linear-gradient(to bottom, rgba(0,242,255,0.1), transparent);
+        }
+
+        h1 {
+            font-size: 4rem;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 10px;
+            text-shadow: 0 0 20px var(--neon-cyan);
+            color: var(--neon-cyan);
+        }
+
+        .status-bar {
+            background: var(--neon-cyan);
+            color: black;
+            display: inline-block;
+            padding: 5px 20px;
+            font-weight: bold;
+            border-radius: 20px;
+            margin-top: 10px;
+            box-shadow: 0 0 15px var(--neon-cyan);
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 25px;
+            padding: 40px;
+            max-width: 1300px;
+            margin: 0 auto;
+        }
+
+        .box {
+            background: var(--glass-bg);
+            border: 1px solid #333;
+            border-radius: 15px;
+            padding: 25px;
+            position: relative;
+            overflow: hidden;
+            transition: 0.4s;
+            backdrop-filter: blur(10px);
+        }
+
+        .box:hover {
+            border-color: var(--neon-cyan);
+            transform: scale(1.02);
+            box-shadow: 0 0 30px rgba(0, 242, 255, 0.2);
+        }
+
+        .box h3 {
+            color: var(--neon-pink);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            border-bottom: 2px solid var(--neon-pink);
+            padding-bottom: 10px;
+            margin-top: 0;
+        }
+
+        .exp-item {
+            margin-bottom: 15px;
+            border-left: 3px solid var(--neon-cyan);
+            padding-left: 15px;
+        }
+
+        .tag {
+            font-size: 0.8rem;
+            background: #222;
+            padding: 3px 8px;
+            border-radius: 4px;
+            margin-right: 5px;
+            color: var(--matrix-green);
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px;
+            font-family: monospace;
+            color: #555;
+        }
+
+        a { color: var(--neon-cyan); text-decoration: none; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>YOUR NAME</h1>
+        <div class="status-bar">ACTIVE: NETWORK & CYBER OPS</div>
+        <p style="color: #888; margin-top: 20px;">[ Location: Pensacola, FL | Clearance: Ready-to-Work ]</p>
+    </header>
+
+    <div class="container">
+        
+        <div class="box" style="grid-column: span 1;">
+            <h3>Strategic Experience</h3>
+            <div class="exp-item">
+                <strong>Pensacola Int. Airport</strong>
+                <p>Critical Infrastructure Operations & Systems Monitoring</p>
+            </div>
+            <div class="exp-item">
+                <strong>Best Buy Geek Squad</strong>
+                <p>Hardware Forensics & Client Systems Recovery</p>
+            </div>
+            <div class="exp-item">
+                <strong>J.M. Tate High School</strong>
+                <p>Tech Internship - Enterprise Support Deployment</p>
+            </div>
+            <div class="exp-item">
+                <span style="opacity: 0.6">Lowe's | Shaggy's | Subway</span>
+                <p style="font-size: 0.8rem">High-Volume Operational Management & Service</p>
+            </div>
+        </div>
+
+        <div class="box">
+            <h3>Technical Arsenal</h3>
+            <p><span class="tag">CompTIA A+</span> Certified Hardware Expert</p>
+            <p><span class="tag">Network+</span> Infrastructure Design</p>
+            <p><span class="tag">Security+</span> Defensive Operations</p>
+            <p><span class="tag">MOS 2019</span> Information Management</p>
+            <p><span class="tag">FL RTW</span> Certified Professionalism</p>
+        </div>
+
+        <div class="box">
+            <h3>Live Lab Deployments</h3>
+            <div class="exp-item">
+                <strong>pfSense Perimeter Defense</strong>
+                <p>Engineered a hardened firewall environment with encrypted VPN tunneling.</p>
+            </div>
+            <div class="exp-item">
+                <strong>VLAN Architecture</strong>
+                <p>Provisioned secure network segmentation using Aruba Enterprise hardware.</p>
+            </div>
+            <div class="exp-item">
+                <strong>Directory Services</strong>
+                <p>Full-scale Active Directory implementation with GPO security auditing.</p>
+            </div>
+        </div>
+
+        <div class="box">
+            <h3>Establish Connection</h3>
+            <p><strong>SIGNAL:</strong> <a href="mailto:your@email.com">your@email.com</a></p>
+            <p><strong>LINKEDIN:</strong> <a href="#">/in/yourprofile</a></p>
+            <p><strong>GITHUB:</strong> <a href="#">/yourname-labs</a></p>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 | System Encrypted. Secure Connection Verified.</p>
+    </footer>
+
+</body>
+</html>
